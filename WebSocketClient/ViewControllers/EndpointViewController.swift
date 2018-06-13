@@ -9,7 +9,8 @@
 import Cocoa
 
 class EndpointViewController: NSViewController {
-
+    @IBOutlet weak var endpointsView: NSOutlineView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.

@@ -76,6 +76,7 @@
 		85E9D09720CE9C3800BE156A /* WebSocketClient */ = {
 			isa = PBXGroup;
 			children = (
+				85E9D0BC20CFF4B700BE156A /* Utils */,
 				85E9D0B720CEAB3B00BE156A /* ViewControllers */,
 				85E9D09820CE9C3800BE156A /* AppDelegate.swift */,
 				85E9D09C20CE9C3900BE156A /* Assets.xcassets */,
@@ -108,6 +109,13 @@
 				85E9D0BA20CEB12300BE156A /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85E9D0BC20CFF4B700BE156A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
