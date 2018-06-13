@@ -9,10 +9,12 @@
 import Cocoa
 
 enum LogLevel: Int {
-    case debug = 0
-    case info
-    case error
     
+    case error = 0
+    case warn
+    case info
+    case debug
+    case trace
     
     var representation: String {
         switch self {
@@ -22,18 +24,28 @@ enum LogLevel: Int {
             return "INFO"
         case .error:
             return "ERROR"
+        case .trace:
+            return "TRACE"
+        case .warn:
+            return "WARN"
         }
     }
     
     
     var color: NSColor {
         switch self {
+            
         case .debug:
-            return NSColor.blue
+            return NSColor.white
         case .info:
-            return NSColor.brown
+            return NSColor(red:0.84, green:0.85, blue:0.86, alpha:1.00)
         case .error:
-            return NSColor.yellow
+            return NSColor(red:0.95, green:0.59, blue:0.60, alpha:1.00)
+        case .trace:
+            return NSColor(red:0.54, green:0.67, blue:0.78, alpha:1.00)
+        case .warn:
+            return NSColor(red:0.96, green:0.81, blue:0.58, alpha:1.00)
+            
         }
     }
 }
@@ -46,7 +58,7 @@ class LogEntry {
     
     init(logString: String) {
         self.logContent = logString
-        let randomNum:UInt32 = arc4random_uniform(3)
+        let randomNum:UInt32 = arc4random_uniform(5)
         self.logLevel = LogLevel(rawValue: Int(randomNum))!
     }
 }

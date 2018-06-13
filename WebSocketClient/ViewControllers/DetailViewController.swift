@@ -25,6 +25,10 @@ class DetailViewController: NSViewController {
     
     private var logEntries = [LogEntry]()
     
+    var popOver: NSPopover?
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +42,12 @@ class DetailViewController: NSViewController {
         let url = endPointText.stringValue
         webSocket = WebSocket(url: URL(string: url)!)
         webSocket.delegate = self
+        
+        
+        self.popOver = NSPopover()
+        self.popOver?.animates = true
+        self.popOver?.behavior = .transient
+        
     }
     @IBAction func sendDidClick(_ sender: Any) {
         webSocket.write(string: "test")
@@ -92,6 +102,17 @@ class DetailViewController: NSViewController {
 
     }
     
+    @IBAction func clearDidClick(_ sender: Any) {
+        
+        let logEntry = LogEntry(logString: "{asdfa;slkdjf;laksdjf;lkaj;flakjsd;fl}")
+        logEntries.append(logEntry)
+        logEntries.append(logEntry)
+        
+        
+        
+        //logEntries.removeAll()
+        tableView.reloadData()
+    }
     
     
 }
@@ -138,6 +159,27 @@ extension DetailViewController: NSTableViewDataSource, NSTableViewDelegate{
         return nil
     }
     
+    
+    
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+        
+        let entry = logEntries[row];
+        print(entry.logLevel.representation)
+        
+        let rect = self.tableView.rect(ofRow: row)
+
+        self.popOver?.close()
+        
+        guard let viewController = self.storyboard?.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "PopoverViewController")) as? PopoverViewController else{
+            return true
+        }
+        
+        
+        self.popOver?.contentViewController = viewController
+        self.popOver?.show(relativeTo: rect, of: self.tableView, preferredEdge: .maxX)
+
+        return true
+    }
     
     
 }
