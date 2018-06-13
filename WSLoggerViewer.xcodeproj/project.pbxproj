@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		851EA78C20D1B84E00DAE38E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */; };
 		851EA79B20D1BA7000DAE38E /* ACEView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EA79620D1BA6200DAE38E /* ACEView.framework */; };
+		851EA7AC20D1C73100DAE38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851EA7AB20D1C73100DAE38E /* Assets.xcassets */; };
 		85E9D09920CE9C3800BE156A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D09820CE9C3800BE156A /* AppDelegate.swift */; };
-		85E9D09D20CE9C3900BE156A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E9D09C20CE9C3900BE156A /* Assets.xcassets */; };
 		85E9D0A020CE9C3900BE156A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E9D09E20CE9C3900BE156A /* Main.storyboard */; };
 		85E9D0B220CE9FFC00BE156A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E9D0AE20CE9FE400BE156A /* Starscream.framework */; };
 		85E9D0B920CEAB7D00BE156A /* EndpointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0B820CEAB7D00BE156A /* EndpointViewController.swift */; };
@@ -60,9 +60,9 @@
 		851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ACEView.xcodeproj; path = ACEView/ACEView.xcodeproj; sourceTree = "<group>"; };
 		851EA79D20D1C21900DAE38E /* WSLoggerViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WSLoggerViewer-Bridging-Header.h"; path = "WSLoggerViewer/WSLoggerViewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		851EA7AB20D1C73100DAE38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85E9D09520CE9C3800BE156A /* WSLoggerViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSLoggerViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E9D09820CE9C3800BE156A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85E9D09C20CE9C3900BE156A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85E9D09F20CE9C3900BE156A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85E9D0A120CE9C3900BE156A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				85E9D0BC20CFF4B700BE156A /* Utils */,
 				85E9D0B720CEAB3B00BE156A /* ViewControllers */,
 				85E9D09820CE9C3800BE156A /* AppDelegate.swift */,
-				85E9D09C20CE9C3900BE156A /* Assets.xcassets */,
+				851EA7AB20D1C73100DAE38E /* Assets.xcassets */,
 				85E9D09E20CE9C3900BE156A /* Main.storyboard */,
 				85E9D0A120CE9C3900BE156A /* Info.plist */,
 			);
@@ -275,8 +275,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85E9D09D20CE9C3900BE156A /* Assets.xcassets in Resources */,
 				85E9D0A020CE9C3900BE156A /* Main.storyboard in Resources */,
+				851EA7AC20D1C73100DAE38E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
