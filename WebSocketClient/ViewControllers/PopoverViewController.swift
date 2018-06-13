@@ -8,11 +8,22 @@
 
 import Cocoa
 
-class PopoverViewController: NSViewController {
 
+
+class PopoverViewController: NSViewController {
+    @IBOutlet weak var aceView: ACEView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        aceView.setString("{ \"name\":\"John\", \"age\":30, \"car\":null }")
+        aceView.setMode(.JSON)
+        aceView.setTheme(.xcode)
+        
     }
+    
+}
+
+extension PopoverViewController : ACEViewDelegate {
     
 }

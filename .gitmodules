@@ -1,3 +1,6 @@
 [submodule "Starscream"]
 	path = Starscream
 	url = https://horsson@github.com/daltoniam/Starscream.git
+[submodule "ACEView"]
+	path = ACEView
+	url = https://horsson@github.com/ACENative/ACEView.git

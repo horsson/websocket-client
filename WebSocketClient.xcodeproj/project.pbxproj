@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		851EA78C20D1B84E00DAE38E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */; };
+		851EA79B20D1BA7000DAE38E /* ACEView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EA79620D1BA6200DAE38E /* ACEView.framework */; };
 		85E9D09920CE9C3800BE156A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D09820CE9C3800BE156A /* AppDelegate.swift */; };
 		85E9D09D20CE9C3900BE156A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E9D09C20CE9C3900BE156A /* Assets.xcassets */; };
 		85E9D0A020CE9C3900BE156A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E9D09E20CE9C3900BE156A /* Main.storyboard */; };
@@ -18,6 +19,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		851EA79520D1BA6200DAE38E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C8A728C15EA0769007E5EB8;
+			remoteInfo = ACEView;
+		};
+		851EA79720D1BA6200DAE38E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C8A72E015EA0F0E007E5EB8;
+			remoteInfo = ACEVIewExample;
+		};
+		851EA79920D1BA6200DAE38E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 36F169E216B9346C00E8965C;
+			remoteInfo = ACEViewTests;
+		};
 		85E9D0AD20CE9FE400BE156A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */;
@@ -36,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ACEView.xcodeproj; path = ACEView/ACEView.xcodeproj; sourceTree = "<group>"; };
+		851EA79C20D1BC7200DAE38E /* WebSocketClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WebSocketClient-Bridging-Header.h"; path = "WebSocketClient/WebSocketClient-Bridging-Header.h"; sourceTree = "<group>"; };
 		85E9D09520CE9C3800BE156A /* WebSocketClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E9D09820CE9C3800BE156A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E9D09C20CE9C3900BE156A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851EA79B20D1BA7000DAE38E /* ACEView.framework in Frameworks */,
 				85E9D0B220CE9FFC00BE156A /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,11 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		851EA79020D1BA6200DAE38E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				851EA79620D1BA6200DAE38E /* ACEView.framework */,
+				851EA79820D1BA6200DAE38E /* ACEVIewExample.app */,
+				851EA79A20D1BA6200DAE38E /* ACEViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		85E9D08C20CE9C3800BE156A = {
 			isa = PBXGroup;
 			children = (
+				851EA79C20D1BC7200DAE38E /* WebSocketClient-Bridging-Header.h */,
 				85E9D09720CE9C3800BE156A /* WebSocketClient */,
 				85E9D09620CE9C3800BE156A /* Products */,
+				851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */,
 				85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */,
 				85E9D0B120CE9FFC00BE156A /* Frameworks */,
 			);
@@ -180,6 +217,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 851EA79020D1BA6200DAE38E /* Products */;
+					ProjectRef = 851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */;
+				},
+				{
 					ProductGroup = 85E9D0A920CE9FE400BE156A /* Products */;
 					ProjectRef = 85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */;
 				},
@@ -192,6 +233,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		851EA79620D1BA6200DAE38E /* ACEView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ACEView.framework;
+			remoteRef = 851EA79520D1BA6200DAE38E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		851EA79820D1BA6200DAE38E /* ACEVIewExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ACEVIewExample.app;
+			remoteRef = 851EA79720D1BA6200DAE38E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		851EA79A20D1BA6200DAE38E /* ACEViewTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ACEViewTests.octest;
+			remoteRef = 851EA79920D1BA6200DAE38E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		85E9D0AE20CE9FE400BE156A /* Starscream.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -377,6 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.haohu.WebSocketClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/${PROJECT_NAME}/WebSocketClient-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -398,6 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.haohu.WebSocketClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/${PROJECT_NAME}/WebSocketClient-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
