@@ -13,6 +13,7 @@
 		85E9D0B220CE9FFC00BE156A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E9D0AE20CE9FE400BE156A /* Starscream.framework */; };
 		85E9D0B920CEAB7D00BE156A /* EndpointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0B820CEAB7D00BE156A /* EndpointViewController.swift */; };
 		85E9D0BB20CEB12300BE156A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0BA20CEB12300BE156A /* DetailViewController.swift */; };
+		85E9D0C420D146CB00BE156A /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0C320D146CB00BE156A /* LogEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
 		85E9D0B820CEAB7D00BE156A /* EndpointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointViewController.swift; sourceTree = "<group>"; };
 		85E9D0BA20CEB12300BE156A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		85E9D0C320D146CB00BE156A /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		85E9D09720CE9C3800BE156A /* WebSocketClient */ = {
 			isa = PBXGroup;
 			children = (
+				85E9D0C020D1465900BE156A /* Entities */,
 				85E9D0BC20CFF4B700BE156A /* Utils */,
 				85E9D0B720CEAB3B00BE156A /* ViewControllers */,
 				85E9D09820CE9C3800BE156A /* AppDelegate.swift */,
@@ -116,6 +119,14 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		85E9D0C020D1465900BE156A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				85E9D0C320D146CB00BE156A /* LogEntry.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85E9D0B920CEAB7D00BE156A /* EndpointViewController.swift in Sources */,
+				85E9D0C420D146CB00BE156A /* LogEntry.swift in Sources */,
 				85E9D09920CE9C3800BE156A /* AppDelegate.swift in Sources */,
 				85E9D0BB20CEB12300BE156A /* DetailViewController.swift in Sources */,
 			);
