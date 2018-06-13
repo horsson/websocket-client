@@ -59,8 +59,8 @@
 /* Begin PBXFileReference section */
 		851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ACEView.xcodeproj; path = ACEView/ACEView.xcodeproj; sourceTree = "<group>"; };
-		851EA79C20D1BC7200DAE38E /* WebSocketClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WebSocketClient-Bridging-Header.h"; path = "WebSocketClient/WebSocketClient-Bridging-Header.h"; sourceTree = "<group>"; };
-		85E9D09520CE9C3800BE156A /* WebSocketClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSocketClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851EA79D20D1C21900DAE38E /* WSLoggerViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WSLoggerViewer-Bridging-Header.h"; path = "WSLoggerViewer/WSLoggerViewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		85E9D09520CE9C3800BE156A /* WSLoggerViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSLoggerViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E9D09820CE9C3800BE156A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E9D09C20CE9C3900BE156A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85E9D09F20CE9C3900BE156A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		85E9D08C20CE9C3800BE156A = {
 			isa = PBXGroup;
 			children = (
-				851EA79C20D1BC7200DAE38E /* WebSocketClient-Bridging-Header.h */,
-				85E9D09720CE9C3800BE156A /* WebSocketClient */,
+				851EA79D20D1C21900DAE38E /* WSLoggerViewer-Bridging-Header.h */,
+				85E9D09720CE9C3800BE156A /* WSLoggerViewer */,
 				85E9D09620CE9C3800BE156A /* Products */,
 				851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */,
 				85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */,
@@ -109,12 +109,12 @@
 		85E9D09620CE9C3800BE156A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85E9D09520CE9C3800BE156A /* WebSocketClient.app */,
+				85E9D09520CE9C3800BE156A /* WSLoggerViewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		85E9D09720CE9C3800BE156A /* WebSocketClient */ = {
+		85E9D09720CE9C3800BE156A /* WSLoggerViewer */ = {
 			isa = PBXGroup;
 			children = (
 				85E9D0C020D1465900BE156A /* Entities */,
@@ -125,7 +125,7 @@
 				85E9D09E20CE9C3900BE156A /* Main.storyboard */,
 				85E9D0A120CE9C3900BE156A /* Info.plist */,
 			);
-			path = WebSocketClient;
+			path = WSLoggerViewer;
 			sourceTree = "<group>";
 		};
 		85E9D0A920CE9FE400BE156A /* Products */ = {
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85E9D09420CE9C3800BE156A /* WebSocketClient */ = {
+		85E9D09420CE9C3800BE156A /* WSLoggerViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85E9D0A520CE9C3900BE156A /* Build configuration list for PBXNativeTarget "WebSocketClient" */;
+			buildConfigurationList = 85E9D0A520CE9C3900BE156A /* Build configuration list for PBXNativeTarget "WSLoggerViewer" */;
 			buildPhases = (
 				85E9D09120CE9C3800BE156A /* Sources */,
 				85E9D09220CE9C3800BE156A /* Frameworks */,
@@ -184,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = WebSocketClient;
-			productName = WebSocketClient;
-			productReference = 85E9D09520CE9C3800BE156A /* WebSocketClient.app */;
+			name = WSLoggerViewer;
+			productName = WSLoggerViewer;
+			productReference = 85E9D09520CE9C3800BE156A /* WSLoggerViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 85E9D09020CE9C3800BE156A /* Build configuration list for PBXProject "WebSocketClient" */;
+			buildConfigurationList = 85E9D09020CE9C3800BE156A /* Build configuration list for PBXProject "WSLoggerViewer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,7 +227,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				85E9D09420CE9C3800BE156A /* WebSocketClient */,
+				85E9D09420CE9C3800BE156A /* WSLoggerViewer */,
 			);
 		};
 /* End PBXProject section */
@@ -431,15 +431,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9HA8AWQ7EM;
-				INFOPLIST_FILE = WebSocketClient/Info.plist;
+				INFOPLIST_FILE = WSLoggerViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.haohu.WebSocketClient;
+				PRODUCT_BUNDLE_IDENTIFIER = de.haohu.WSLoggerViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/${PROJECT_NAME}/WebSocketClient-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/${PROJECT_NAME}/WSLoggerViewer-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -453,15 +453,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9HA8AWQ7EM;
-				INFOPLIST_FILE = WebSocketClient/Info.plist;
+				INFOPLIST_FILE = WSLoggerViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.haohu.WebSocketClient;
+				PRODUCT_BUNDLE_IDENTIFIER = de.haohu.WSLoggerViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/${PROJECT_NAME}/WebSocketClient-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/${PROJECT_NAME}/WSLoggerViewer-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -469,7 +469,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85E9D09020CE9C3800BE156A /* Build configuration list for PBXProject "WebSocketClient" */ = {
+		85E9D09020CE9C3800BE156A /* Build configuration list for PBXProject "WSLoggerViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85E9D0A320CE9C3900BE156A /* Debug */,
@@ -478,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85E9D0A520CE9C3900BE156A /* Build configuration list for PBXNativeTarget "WebSocketClient" */ = {
+		85E9D0A520CE9C3900BE156A /* Build configuration list for PBXNativeTarget "WSLoggerViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85E9D0A620CE9C3900BE156A /* Debug */,

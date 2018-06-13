@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:WebSocketClient.xcodeproj">
+      location = "group:/Users/d058856/Documents/github/websocket-client/WSLoggerViewer.xcodeproj">
    </FileRef>
 </Workspace>

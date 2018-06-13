@@ -12,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="WebSocketClient" id="1Xt-HY-uBw">
+                            <menuItem title="WSLoggerViewer" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="WebSocketClient" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="WSLoggerViewer" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About WebSocketClient" id="5kV-Vb-QxS">
+                                        <menuItem title="About WSLoggerViewer" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide WebSocketClient" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide WSLoggerViewer" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit WebSocketClient" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit WSLoggerViewer" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -661,7 +661,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="WebSocketClient Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="WSLoggerViewer Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -675,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WebSocketClient" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="WSLoggerViewer" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -730,7 +730,7 @@
         <!--Endpoint View Controller-->
         <scene sceneID="mzm-s2-bs3">
             <objects>
-                <viewController id="h7V-wM-Ot9" customClass="EndpointViewController" customModule="WebSocketClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h7V-wM-Ot9" customClass="EndpointViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="vg2-N2-K72">
                         <rect key="frame" x="0.0" y="0.0" width="185" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -838,7 +838,7 @@
         <!--Detail View Controller-->
         <scene sceneID="Oss-hp-zBh">
             <objects>
-                <viewController id="Gaj-le-vZb" customClass="DetailViewController" customModule="WebSocketClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gaj-le-vZb" customClass="DetailViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="VYa-RJ-fUe">
                         <rect key="frame" x="0.0" y="0.0" width="649" height="367"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1069,7 +1069,7 @@
         <!--Popover View Controller-->
         <scene sceneID="842-Sf-3Ii">
             <objects>
-                <viewController storyboardIdentifier="PopoverViewController" id="MGv-6Q-5cY" customClass="PopoverViewController" customModule="WebSocketClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopoverViewController" id="MGv-6Q-5cY" customClass="PopoverViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="eg8-GL-9d9">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
