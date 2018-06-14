@@ -45,8 +45,7 @@ class DetailViewController: NSViewController {
         
         
         self.popOver = NSPopover()
-        self.popOver?.animates = true
-        self.popOver?.behavior = .transient
+        self.popOver?.behavior = .semitransient
         
     }
     @IBAction func sendDidClick(_ sender: Any) {
@@ -63,33 +62,7 @@ class DetailViewController: NSViewController {
         
     }
     
-    @IBAction func resizeFont(_ sender: Any) {
-        
-        let button = sender as! NSButton
-        
-        guard let image = button.image else {
-            return
-        }
-        
-        if image.name()?.rawValue == "NSAddTemplate" {
-            
-        } else {
-            
-        }
-        
-        
-    }
-    
-    private func increaseSize(){
-        
-    }
-    
-    
-    private func decreaseSize(){
-        
-    }
-    
-    
+
     private func debugString(forText text: String) -> NSAttributedString {
         
         let attributedString = NSMutableAttributedString(string:text)
@@ -174,7 +147,7 @@ extension DetailViewController: NSTableViewDataSource, NSTableViewDelegate{
             return true
         }
         
-        
+        viewController.codeText = entry.logContent
         self.popOver?.contentViewController = viewController
         self.popOver?.show(relativeTo: rect, of: self.tableView, preferredEdge: .maxX)
 

@@ -690,6 +690,19 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="684" height="547"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <toolbar key="toolbar" implicitIdentifier="3753F740-0C6D-4DED-8A41-94FE4FFE2A6E" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="SOe-QV-fGb">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="S8e-tO-MY8"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="b74-BV-wdc"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="y67-ap-OOi"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="zCt-v2-yS2"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Hnw-A9-8fI"/>
+                                <toolbarItem implicitItemIdentifier="E3C92B2C-A954-4D1A-B3B9-7CCF433F8E65" label="Honeycomb" paletteLabel="Honeycomb" tag="-1" image="honeycomb" id="uIR-LR-WeA"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="uIR-LR-WeA"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -904,40 +917,6 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86k-vb-DoU">
-                                <rect key="frame" x="595" y="37" width="34" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HMr-N3-ZuR">
-                                        <rect key="frame" x="0.0" y="-1" width="13" height="21"/>
-                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Dd-dl-mG4">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="resizeFont:" target="Gaj-le-vZb" id="laz-Fm-Dwy"/>
-                                        </connections>
-                                    </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iks-Ls-xZZ">
-                                        <rect key="frame" x="21" y="-1" width="13" height="21"/>
-                                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zqN-fD-1as">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="resizeFont:" target="Gaj-le-vZb" id="YDm-xY-Lkt"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
-                            </stackView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ab6-kP-JRv">
                                 <rect key="frame" x="617" y="327" width="18" height="18"/>
                                 <constraints>
@@ -1071,14 +1050,31 @@
             <objects>
                 <viewController storyboardIdentifier="PopoverViewController" id="MGv-6Q-5cY" customClass="PopoverViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="eg8-GL-9d9">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="548" height="367"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jwy-Fm-cEW" customClass="ACEView">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Jwy-Fm-cEW" customClass="ACEView">
+                                <rect key="frame" x="0.0" y="48" width="548" height="319"/>
                             </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cYk-dL-db5">
+                                <rect key="frame" x="238" y="0.0" width="72" height="32"/>
+                                <buttonCell key="cell" type="push" title="Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lOu-PE-3v4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="copyDidClick:" target="MGv-6Q-5cY" id="WBW-j0-ewO"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="Jwy-Fm-cEW" firstAttribute="top" secondItem="eg8-GL-9d9" secondAttribute="top" id="6Cs-WC-2wV"/>
+                            <constraint firstItem="Jwy-Fm-cEW" firstAttribute="leading" secondItem="eg8-GL-9d9" secondAttribute="leading" id="7RF-Ek-DTA"/>
+                            <constraint firstAttribute="trailing" secondItem="Jwy-Fm-cEW" secondAttribute="trailing" id="QKh-c6-gxH"/>
+                            <constraint firstItem="cYk-dL-db5" firstAttribute="centerX" secondItem="eg8-GL-9d9" secondAttribute="centerX" id="Tsd-qP-Ojr"/>
+                            <constraint firstItem="cYk-dL-db5" firstAttribute="top" secondItem="Jwy-Fm-cEW" secondAttribute="bottom" constant="20" id="fzL-ZW-nZt"/>
+                            <constraint firstAttribute="bottom" secondItem="cYk-dL-db5" secondAttribute="bottom" constant="7" id="kKd-z3-KXt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="aceView" destination="Jwy-Fm-cEW" id="q8F-iv-dpi"/>
@@ -1086,13 +1082,12 @@
                 </viewController>
                 <customObject id="3xA-zx-21G" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="1321"/>
+            <point key="canvasLocation" x="382" y="1312.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
-        <image name="NSAddTemplate" width="11" height="11"/>
-        <image name="NSRemoveTemplate" width="11" height="11"/>
+        <image name="honeycomb" width="294.9119873046875" height="294.9119873046875"/>
         <image name="red_circle" width="128" height="128"/>
     </resources>
 </document>
