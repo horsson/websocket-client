@@ -10,11 +10,12 @@
 		851EA78C20D1B84E00DAE38E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */; };
 		851EA79B20D1BA7000DAE38E /* ACEView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EA79620D1BA6200DAE38E /* ACEView.framework */; };
 		851EA7AC20D1C73100DAE38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851EA7AB20D1C73100DAE38E /* Assets.xcassets */; };
+		8572328020D29A8B00DDB864 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572327F20D29A8B00DDB864 /* WebViewController.swift */; };
 		85E9D09920CE9C3800BE156A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D09820CE9C3800BE156A /* AppDelegate.swift */; };
 		85E9D0A020CE9C3900BE156A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E9D09E20CE9C3900BE156A /* Main.storyboard */; };
 		85E9D0B220CE9FFC00BE156A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E9D0AE20CE9FE400BE156A /* Starscream.framework */; };
 		85E9D0B920CEAB7D00BE156A /* EndpointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0B820CEAB7D00BE156A /* EndpointViewController.swift */; };
-		85E9D0BB20CEB12300BE156A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0BA20CEB12300BE156A /* DetailViewController.swift */; };
+		85E9D0BB20CEB12300BE156A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0BA20CEB12300BE156A /* LogViewController.swift */; };
 		85E9D0C420D146CB00BE156A /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0C320D146CB00BE156A /* LogEntry.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,13 +62,14 @@
 		851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ACEView.xcodeproj; path = ACEView/ACEView.xcodeproj; sourceTree = "<group>"; };
 		851EA79D20D1C21900DAE38E /* WSLoggerViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WSLoggerViewer-Bridging-Header.h"; path = "WSLoggerViewer/WSLoggerViewer-Bridging-Header.h"; sourceTree = "<group>"; };
 		851EA7AB20D1C73100DAE38E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8572327F20D29A8B00DDB864 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		85E9D09520CE9C3800BE156A /* WSLoggerViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSLoggerViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E9D09820CE9C3800BE156A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85E9D09F20CE9C3900BE156A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85E9D0A120CE9C3900BE156A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
 		85E9D0B820CEAB7D00BE156A /* EndpointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointViewController.swift; sourceTree = "<group>"; };
-		85E9D0BA20CEB12300BE156A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		85E9D0BA20CEB12300BE156A /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		85E9D0C320D146CB00BE156A /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				85E9D0B820CEAB7D00BE156A /* EndpointViewController.swift */,
-				85E9D0BA20CEB12300BE156A /* DetailViewController.swift */,
+				85E9D0BA20CEB12300BE156A /* LogViewController.swift */,
 				851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */,
+				8572327F20D29A8B00DDB864 /* WebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -288,10 +291,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				85E9D0B920CEAB7D00BE156A /* EndpointViewController.swift in Sources */,
+				8572328020D29A8B00DDB864 /* WebViewController.swift in Sources */,
 				85E9D0C420D146CB00BE156A /* LogEntry.swift in Sources */,
 				851EA78C20D1B84E00DAE38E /* PopoverViewController.swift in Sources */,
 				85E9D09920CE9C3800BE156A /* AppDelegate.swift in Sources */,
-				85E9D0BB20CEB12300BE156A /* DetailViewController.swift in Sources */,
+				85E9D0BB20CEB12300BE156A /* LogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

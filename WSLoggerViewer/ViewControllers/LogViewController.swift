@@ -10,7 +10,7 @@ import Cocoa
 import Starscream
 
 
-class DetailViewController: NSViewController {
+class LogViewController: NSViewController {
     
     @IBOutlet weak var tableView: NSTableView!
     
@@ -93,7 +93,7 @@ class DetailViewController: NSViewController {
 
 //MARK: NSTableView
 
-extension DetailViewController: NSTableViewDataSource, NSTableViewDelegate{
+extension LogViewController: NSTableViewDataSource, NSTableViewDelegate{
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return logEntries.count
@@ -160,7 +160,7 @@ extension DetailViewController: NSTableViewDataSource, NSTableViewDelegate{
 
 //MARK: WebSocket
 
-extension DetailViewController : WebSocketDelegate{
+extension LogViewController : WebSocketDelegate{
     
     func websocketDidConnect(socket: WebSocketClient){
         print("Socket did connect.")

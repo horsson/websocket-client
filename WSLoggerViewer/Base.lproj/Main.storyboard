@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
@@ -724,7 +725,7 @@
                         <splitViewItem id="VlG-93-L5y"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="tJh-RO-qL0">
-                        <rect key="frame" x="0.0" y="0.0" width="804" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1218" height="651"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <outlet property="delegate" destination="IlO-Xw-Uac" id="kaI-5I-ZDw"/>
@@ -738,7 +739,7 @@
                 </splitViewController>
                 <customObject id="ND2-V8-Vjl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-508" y="805"/>
+            <point key="canvasLocation" x="-257" y="924.5"/>
         </scene>
         <!--Endpoint View Controller-->
         <scene sceneID="mzm-s2-bs3">
@@ -846,12 +847,12 @@
                 </viewController>
                 <customObject id="kvX-VR-m8l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-867.5" y="1321"/>
+            <point key="canvasLocation" x="-490" y="1546"/>
         </scene>
         <!--Log-->
         <scene sceneID="Oss-hp-zBh">
             <objects>
-                <viewController title="Log" id="Gaj-le-vZb" customClass="DetailViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Log" id="Gaj-le-vZb" customClass="LogViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="VYa-RJ-fUe">
                         <rect key="frame" x="0.0" y="0.0" width="649" height="367"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1043,7 +1044,7 @@
                 </viewController>
                 <customObject id="4Gl-OB-Wjl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1658"/>
+            <point key="canvasLocation" x="187" y="2114"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="IHi-pu-rv4">
@@ -1054,7 +1055,7 @@
                         <tabViewItem identifier="" id="jKa-jM-da4"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="F8p-Sq-U9w">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="759" height="554"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
                         <connections>
@@ -1069,20 +1070,38 @@
                 </tabViewController>
                 <customObject id="Pfa-ps-g7m" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-596" y="1884"/>
+            <point key="canvasLocation" x="225.5" y="1596"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="h4U-70-RNH">
             <objects>
-                <viewController id="OwM-Ev-TwB" sceneMemberID="viewController">
+                <viewController id="OwM-Ev-TwB" customClass="WebViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="uLf-pH-2Ee">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="534" height="379"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEW-GE-HNY">
+                                <rect key="frame" x="0.0" y="0.0" width="534" height="379"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="lEW-GE-HNY" firstAttribute="leading" secondItem="uLf-pH-2Ee" secondAttribute="leading" id="4un-37-3Wk"/>
+                            <constraint firstItem="lEW-GE-HNY" firstAttribute="top" secondItem="uLf-pH-2Ee" secondAttribute="top" id="5F7-uc-CAi"/>
+                            <constraint firstAttribute="bottom" secondItem="lEW-GE-HNY" secondAttribute="bottom" id="mfz-eO-2qs"/>
+                            <constraint firstAttribute="trailing" secondItem="lEW-GE-HNY" secondAttribute="trailing" id="tKw-74-1NP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="lEW-GE-HNY" id="vKE-4t-vBp"/>
+                    </connections>
                 </viewController>
                 <customObject id="xOR-Yx-e4O" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="2070"/>
+            <point key="canvasLocation" x="-534" y="2008.5"/>
         </scene>
         <!--Popover View Controller-->
         <scene sceneID="842-Sf-3Ii">
@@ -1121,7 +1140,7 @@
                 </viewController>
                 <customObject id="3xA-zx-21G" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="1080"/>
+            <point key="canvasLocation" x="-625" y="2473"/>
         </scene>
     </scenes>
     <resources>
