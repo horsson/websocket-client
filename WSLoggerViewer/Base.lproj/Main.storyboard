@@ -680,7 +680,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-497" y="-148"/>
+            <point key="canvasLocation" x="-630" y="-361"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -698,7 +698,7 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="y67-ap-OOi"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="zCt-v2-yS2"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Hnw-A9-8fI"/>
-                                <toolbarItem implicitItemIdentifier="E3C92B2C-A954-4D1A-B3B9-7CCF433F8E65" label="Honeycomb" paletteLabel="Honeycomb" tag="-1" image="honeycomb" id="uIR-LR-WeA"/>
+                                <toolbarItem implicitItemIdentifier="E3C92B2C-A954-4D1A-B3B9-7CCF433F8E65" label="Honeycomb" paletteLabel="Honeycomb" tag="-1" image="honeycomb" autovalidates="NO" id="uIR-LR-WeA"/>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="uIR-LR-WeA"/>
@@ -714,7 +714,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-271" y="165.5"/>
+            <point key="canvasLocation" x="-164" y="167"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="VXq-37-NWC">
@@ -739,30 +739,30 @@
                 </splitViewController>
                 <customObject id="ND2-V8-Vjl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-257" y="924.5"/>
+            <point key="canvasLocation" x="-247" y="1086"/>
         </scene>
         <!--Endpoint View Controller-->
         <scene sceneID="mzm-s2-bs3">
             <objects>
                 <viewController id="h7V-wM-Ot9" customClass="EndpointViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="vg2-N2-K72">
-                        <rect key="frame" x="0.0" y="0.0" width="185" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="239" height="483"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLx-JY-qMc">
-                                <rect key="frame" x="0.0" y="0.0" width="185" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="239" height="483"/>
                                 <clipView key="contentView" drawsBackground="NO" id="2WM-ZM-mEi">
-                                    <rect key="frame" x="1" y="1" width="183" height="298"/>
+                                    <rect key="frame" x="1" y="1" width="237" height="481"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="AE0-vO-53Z" id="IsH-ST-lKl">
-                                            <rect key="frame" x="0.0" y="0.0" width="183" height="298"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="237" height="481"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn identifier="" width="180" minWidth="16" maxWidth="1000" id="AE0-vO-53Z">
+                                                <tableColumn identifier="" width="234" minWidth="16" maxWidth="1000" id="AE0-vO-53Z">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -776,11 +776,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="HeaderCell" id="CuP-df-wXe">
-                                                            <rect key="frame" x="1" y="1" width="180" height="17"/>
+                                                            <rect key="frame" x="1" y="1" width="234" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zsg-zf-z9u">
-                                                                    <rect key="frame" x="0.0" y="1" width="180" height="14"/>
+                                                                    <rect key="frame" x="0.0" y="1" width="234" height="14"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="HEADER CELL" id="cjp-9N-dOt">
                                                                         <font key="font" metaFont="smallSystemBold"/>
@@ -794,7 +794,7 @@
                                                             </connections>
                                                         </tableCellView>
                                                         <tableCellView identifier="DataCell" id="ADp-Bl-aIh">
-                                                            <rect key="frame" x="1" y="20" width="180" height="17"/>
+                                                            <rect key="frame" x="1" y="20" width="234" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xkr-RY-Gex">
@@ -803,7 +803,7 @@
                                                                     <imageCell key="cell" refusesFirstResponder="YES" imageScaling="proportionallyDown" image="NSActionTemplate" id="6ae-98-Xsu"/>
                                                                 </imageView>
                                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LAD-ma-YiQ">
-                                                                    <rect key="frame" x="25" y="0.0" width="155" height="17"/>
+                                                                    <rect key="frame" x="25" y="0.0" width="209" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="ire-M0-J28">
                                                                         <font key="font" metaFont="system"/>
@@ -847,18 +847,18 @@
                 </viewController>
                 <customObject id="kvX-VR-m8l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-490" y="1546"/>
+            <point key="canvasLocation" x="-764" y="1769"/>
         </scene>
         <!--Log-->
         <scene sceneID="Oss-hp-zBh">
             <objects>
                 <viewController title="Log" id="Gaj-le-vZb" customClass="LogViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="VYa-RJ-fUe">
-                        <rect key="frame" x="0.0" y="0.0" width="649" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="695" height="584"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2a-Pz-9YJ">
-                                <rect key="frame" x="220" y="20" width="210" height="21"/>
+                                <rect key="frame" x="243" y="20" width="210" height="21"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uo5-Zy-Whk">
                                         <rect key="frame" x="-6" y="-7" width="92" height="32"/>
@@ -903,7 +903,7 @@
                                 </customSpacing>
                             </stackView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Aey-lV-tcg">
-                                <rect key="frame" x="18" y="330" width="62" height="17"/>
+                                <rect key="frame" x="18" y="547" width="62" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Endpoint:" id="mpF-pm-2QH">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -911,7 +911,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PWu-Ph-DOv">
-                                <rect key="frame" x="86" y="327" width="514" height="22"/>
+                                <rect key="frame" x="86" y="544" width="560" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="wss://copiloteasmalltalkwfd7746b4.int.sap.hana.ondemand.com/letschat" drawsBackground="YES" id="fnh-dX-5Ka">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -919,7 +919,7 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ab6-kP-JRv">
-                                <rect key="frame" x="617" y="327" width="18" height="18"/>
+                                <rect key="frame" x="663" y="544" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="Gud-3l-USf"/>
                                     <constraint firstAttribute="height" constant="18" id="uYI-jZ-coH"/>
@@ -927,13 +927,13 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="red_circle" id="2AO-Nd-nRk"/>
                             </imageView>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH0-WX-4ph">
-                                <rect key="frame" x="20" y="64" width="615" height="255"/>
+                                <rect key="frame" x="20" y="64" width="661" height="472"/>
                                 <clipView key="contentView" id="rMo-xh-b69">
-                                    <rect key="frame" x="1" y="1" width="613" height="253"/>
+                                    <rect key="frame" x="1" y="1" width="659" height="470"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="ekz-8X-jTq">
-                                            <rect key="frame" x="0.0" y="0.0" width="613" height="253"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="659" height="470"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -972,7 +972,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn identifier="" width="491" minWidth="10" maxWidth="3.4028234663852886e+38" id="F8I-Ve-0bb">
+                                                <tableColumn identifier="" width="537" minWidth="10" maxWidth="3.4028234663852886e+38" id="F8I-Ve-0bb">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -986,11 +986,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="LogContent" id="mpN-pu-off">
-                                                            <rect key="frame" x="120" y="1" width="491" height="17"/>
+                                                            <rect key="frame" x="120" y="1" width="537" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qL-36-6tn">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="491" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="537" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="T1s-nw-0ac">
                                                                         <font key="font" metaFont="system"/>
@@ -1044,12 +1044,12 @@
                 </viewController>
                 <customObject id="4Gl-OB-Wjl" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="187" y="2114"/>
+            <point key="canvasLocation" x="324.5" y="2391"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="IHi-pu-rv4">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="4Yt-xL-3UH" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="1" id="4Yt-xL-3UH" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="loB-Cl-0QE"/>
                         <tabViewItem identifier="" id="jKa-jM-da4"/>
@@ -1070,18 +1070,18 @@
                 </tabViewController>
                 <customObject id="Pfa-ps-g7m" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225.5" y="1596"/>
+            <point key="canvasLocation" x="409" y="1604"/>
         </scene>
-        <!--Web View Controller-->
+        <!--CoPilot-->
         <scene sceneID="h4U-70-RNH">
             <objects>
-                <viewController id="OwM-Ev-TwB" customClass="WebViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="CoPilot" id="OwM-Ev-TwB" customClass="WebViewController" customModule="WSLoggerViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="uLf-pH-2Ee">
-                        <rect key="frame" x="0.0" y="0.0" width="534" height="379"/>
+                        <rect key="frame" x="0.0" y="0.0" width="524" height="704"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEW-GE-HNY">
-                                <rect key="frame" x="0.0" y="0.0" width="534" height="379"/>
+                                <rect key="frame" x="0.0" y="0.0" width="524" height="704"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -1089,10 +1089,10 @@
                             </wkWebView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="lEW-GE-HNY" firstAttribute="leading" secondItem="uLf-pH-2Ee" secondAttribute="leading" id="4un-37-3Wk"/>
-                            <constraint firstItem="lEW-GE-HNY" firstAttribute="top" secondItem="uLf-pH-2Ee" secondAttribute="top" id="5F7-uc-CAi"/>
-                            <constraint firstAttribute="bottom" secondItem="lEW-GE-HNY" secondAttribute="bottom" id="mfz-eO-2qs"/>
-                            <constraint firstAttribute="trailing" secondItem="lEW-GE-HNY" secondAttribute="trailing" id="tKw-74-1NP"/>
+                            <constraint firstItem="lEW-GE-HNY" firstAttribute="leading" secondItem="uLf-pH-2Ee" secondAttribute="leading" id="7KZ-tO-Vqb"/>
+                            <constraint firstAttribute="bottom" secondItem="lEW-GE-HNY" secondAttribute="bottom" id="8Mt-6M-HaG"/>
+                            <constraint firstAttribute="trailing" secondItem="lEW-GE-HNY" secondAttribute="trailing" id="jmD-qg-KmW"/>
+                            <constraint firstItem="lEW-GE-HNY" firstAttribute="top" secondItem="uLf-pH-2Ee" secondAttribute="top" id="xiR-Sb-QPv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1101,7 +1101,7 @@
                 </viewController>
                 <customObject id="xOR-Yx-e4O" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-534" y="2008.5"/>
+            <point key="canvasLocation" x="-538" y="2623"/>
         </scene>
         <!--Popover View Controller-->
         <scene sceneID="842-Sf-3Ii">
@@ -1140,7 +1140,7 @@
                 </viewController>
                 <customObject id="3xA-zx-21G" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-625" y="2473"/>
+            <point key="canvasLocation" x="270" y="3034"/>
         </scene>
     </scenes>
     <resources>

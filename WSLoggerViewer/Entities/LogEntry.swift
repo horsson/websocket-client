@@ -16,6 +16,23 @@ enum LogLevel: Int {
     case debug
     case trace
     
+    static func parseString(string: String) -> LogLevel? {
+        switch string {
+        case "ERROR":
+            return .error
+        case "WARN":
+            return .warn
+        case "INFO":
+            return .info
+        case "DEBUG":
+            return .debug
+        case "TRACE":
+            return .trace
+        default:
+            return nil
+        }
+    }
+    
     var representation: String {
         switch self {
         case .debug:
@@ -50,15 +67,25 @@ enum LogLevel: Int {
     }
 }
 
-class LogEntry {
+struct LogEntry {
     
     var logLevel = LogLevel.debug
-    var logContent:String
+    var logContent:String = ""
     
     
     init(logString: String) {
-        self.logContent = logString
-        let randomNum:UInt32 = arc4random_uniform(5)
-        self.logLevel = LogLevel(rawValue: Int(randomNum))!
+        
+        guard let jsonData = logString.data(using: .utf8) else {
+            return
+        }
+        
+        
+        guard let jsonObj = try? JSONSerialization.jsonObject(with: jsonData, options: []) as! [String : String] else {
+            return
+        }
+        
+        
+        self.logLevel = LogLevel.parseString(string: jsonObj["level"]!) ?? .debug
+        self.logContent = jsonObj["body"]!
     }
 }

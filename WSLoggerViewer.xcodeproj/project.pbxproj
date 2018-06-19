@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		851EA78C20D1B84E00DAE38E /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */; };
-		851EA79B20D1BA7000DAE38E /* ACEView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EA79620D1BA6200DAE38E /* ACEView.framework */; };
 		851EA7AC20D1C73100DAE38E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851EA7AB20D1C73100DAE38E /* Assets.xcassets */; };
 		8572328020D29A8B00DDB864 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8572327F20D29A8B00DDB864 /* WebViewController.swift */; };
+		8572328120D29DA200DDB864 /* ACEView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EA79620D1BA6200DAE38E /* ACEView.framework */; };
+		8572328220D29DA200DDB864 /* ACEView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 851EA79620D1BA6200DAE38E /* ACEView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8572328520D29DA200DDB864 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E9D0AE20CE9FE400BE156A /* Starscream.framework */; };
+		8572328620D29DA200DDB864 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 85E9D0AE20CE9FE400BE156A /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85E9D09920CE9C3800BE156A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D09820CE9C3800BE156A /* AppDelegate.swift */; };
 		85E9D0A020CE9C3900BE156A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E9D09E20CE9C3900BE156A /* Main.storyboard */; };
-		85E9D0B220CE9FFC00BE156A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E9D0AE20CE9FE400BE156A /* Starscream.framework */; };
 		85E9D0B920CEAB7D00BE156A /* EndpointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0B820CEAB7D00BE156A /* EndpointViewController.swift */; };
 		85E9D0BB20CEB12300BE156A /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0BA20CEB12300BE156A /* LogViewController.swift */; };
 		85E9D0C420D146CB00BE156A /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9D0C320D146CB00BE156A /* LogEntry.swift */; };
@@ -41,6 +43,20 @@
 			remoteGlobalIDString = 36F169E216B9346C00E8965C;
 			remoteInfo = ACEViewTests;
 		};
+		8572328320D29DA200DDB864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851EA78F20D1BA6200DAE38E /* ACEView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8A728B15EA0769007E5EB8;
+			remoteInfo = ACEView;
+		};
+		8572328720D29DA200DDB864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CCF0841F5DDC030099B092;
+			remoteInfo = Starscream;
+		};
 		85E9D0AD20CE9FE400BE156A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 85E9D0A820CE9FE400BE156A /* Starscream.xcodeproj */;
@@ -56,6 +72,21 @@
 			remoteInfo = "Starscream Tests";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8572328920D29DA200DDB864 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8572328220D29DA200DDB864 /* ACEView.framework in Embed Frameworks */,
+				8572328620D29DA200DDB864 /* Starscream.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		851EA78B20D1B84E00DAE38E /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -78,8 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				851EA79B20D1BA7000DAE38E /* ACEView.framework in Frameworks */,
-				85E9D0B220CE9FFC00BE156A /* Starscream.framework in Frameworks */,
+				8572328120D29DA200DDB864 /* ACEView.framework in Frameworks */,
+				8572328520D29DA200DDB864 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,10 +213,13 @@
 				85E9D09120CE9C3800BE156A /* Sources */,
 				85E9D09220CE9C3800BE156A /* Frameworks */,
 				85E9D09320CE9C3800BE156A /* Resources */,
+				8572328920D29DA200DDB864 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8572328420D29DA200DDB864 /* PBXTargetDependency */,
+				8572328820D29DA200DDB864 /* PBXTargetDependency */,
 			);
 			name = WSLoggerViewer;
 			productName = WSLoggerViewer;
@@ -300,6 +334,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8572328420D29DA200DDB864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACEView;
+			targetProxy = 8572328320D29DA200DDB864 /* PBXContainerItemProxy */;
+		};
+		8572328820D29DA200DDB864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			targetProxy = 8572328720D29DA200DDB864 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		85E9D09E20CE9C3900BE156A /* Main.storyboard */ = {
@@ -429,6 +476,7 @@
 		85E9D0A620CE9C3900BE156A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -451,6 +499,7 @@
 		85E9D0A720CE9C3900BE156A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -462,6 +511,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = de.haohu.WSLoggerViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

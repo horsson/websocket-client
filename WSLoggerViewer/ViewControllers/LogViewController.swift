@@ -83,7 +83,7 @@ class LogViewController: NSViewController {
         
         
         
-        //logEntries.removeAll()
+        logEntries.removeAll()
         tableView.reloadData()
     }
     
